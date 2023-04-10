@@ -1,0 +1,15 @@
+CREATE TABLE clothes (id INTEGER PRIMARY KEY, name TEXT, brand TEXT, quantity INTEGER, price INTEGER);
+INSERT INTO clothes VALUES(1, "shirts", "Lucky Brand", 3, 11.99); 
+INSERT INTO clothes VALUES(2, "pants", "American Eagle", 5, 14.99);
+INSERT INTO clothes VALUES(3, "jackets", "J. Crew", 4, 15.99);
+INSERT INTO clothes VALUES(4, "rompers", "Calvin Klein", 8, 15.99);
+INSERT INTO clothes VALUES(5, "dresses", "Abercrombie", 7, 17.99);
+
+--display the database ordered by price. 
+SELECT * FROM clothes ORDER BY price;
+
+--what is the sum of all the clothes?
+SELECT SUM(quantity) FROM clothes;
+
+--filter the items greater than $13.
+SELECT * FROM clothes WHERE PRICE >13;
