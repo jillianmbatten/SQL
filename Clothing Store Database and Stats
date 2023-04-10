@@ -13,3 +13,4 @@ SELECT SUM(quantity) FROM clothes;
 
 --filter the items greater than $13.
 SELECT * FROM clothes WHERE PRICE >13;
+
